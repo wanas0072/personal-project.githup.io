@@ -1,0 +1,163 @@
+body{
+    background-color: #F3E9DD;
+}
+
+header{
+    flex: 1 100%;
+    background-color: #3A3845;
+    padding: 1px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+nav{
+    display: flex;
+    padding: 10px;
+    flex: 1 100%;
+    background-color: #C69B7B;
+    margin: 5px 0px;
+    font-size: 1.5em;
+    border: 2px solid #3A3845;
+}
+
+.menu{
+    color: #3A3845;
+    
+}
+
+div{
+    font-size: 1em;
+    margin: 0px 15px;
+}
+
+div:nth-child(2) {
+    margin-left: 30px;
+}
+
+div:nth-child(3) {
+    margin-left: 30px;
+}
+
+#myPhoto {
+    grid-area: main1;
+    background-color: #E5CB9F;
+    border: 2px solid #3A3845;
+}
+
+.picMe{
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    border: 10px solid #EDE6DB;
+    margin: 20px;
+}
+
+#info {
+    grid-area: main2;
+    background-color: #99C4C8;
+    border: 2px solid #3A3845;
+}
+
+h2{
+    font-size: 1.8em;
+    text-align: center;
+    margin: 10px 0px;
+    color: #826F66;
+}
+
+#contact{
+    grid-area: main3;
+    font-size: 1em;
+    background-color: #82A284;
+    border: 2px solid #3A3845;
+}
+
+p{
+    font-size: 1.2em;
+    padding: 0px 20px;
+}
+
+footer{
+    grid-area: footer;
+    line-height: 50px;
+    background-color: #3A3845;
+    text-align: center;
+    flex: 1 100%;
+    color: whitesmoke;
+}
+
+article{
+    display: grid;
+    background-color: #F3E9DD;
+    gap: 10px;
+    margin: 0px 0px;
+    grid-template-areas:
+    'main1 main2 main3'
+    'footer footer footer';
+}
+
+@media screen and (max-width: 1000px){
+    .picMe{
+        text-align: center;
+        width: 250px;
+        height: 250px;
+        border-radius: 10%;
+        border: 10px solid #EDE6DB;
+        margin: 20px;
+    }
+    article{
+        display: grid;
+    background-color: #F3E9DD;
+    gap: 5px;
+    margin: 0px 0px;
+    grid-template-areas:
+    'main1 main2'
+    'main3 main3'
+    'footer footer';
+    }
+}
+
+@media screen and (max-width: 700px){
+    header{
+        flex: 1 100%;
+        background-color: #3A3845;
+        padding: 1px;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 1.2em;
+    }
+    nav{
+        display: flex;
+        padding: 10px;
+        flex: 1 100%;
+        background-color: #C69B7B;
+        margin: 3px 0px;
+        font-size: 1.2em;
+        border: 2px solid #3A3845;
+    }    
+    #myPhoto {
+        grid-area: main1;
+        text-align: center;
+        background-color: #E5CB9F;
+        border: 2px solid #3A3845;
+    }
+    .picMe{
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        border: 10px solid #EDE6DB;
+        margin: 20px;
+    }
+    article{
+        display: grid;
+    background-color: #F3E9DD;
+    gap: 3px;
+    margin: 0px 0px;
+    grid-template-areas:
+    'main1'
+    'main2'
+    'main3'
+    'footer';
+    }
+}
